@@ -21,7 +21,7 @@ const Signup = () => {
     };
 
     await axios
-      .post("/api/user/signup", userInfo)
+      .post("https://book-store-1hqv.onrender.com/api/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
