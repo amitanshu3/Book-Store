@@ -20,7 +20,12 @@ const url=process.env.MONGODBURL;
     }
   
   )
- 
+
+app.get('/',(req,res)=>{
+  res.send("Api Is Working")
+}
+
+
 const db=mongoose.connection;
 
 //define event listners for data base connection 
