@@ -21,7 +21,7 @@ const Signup = () => {
     };
 
     await axios
-      .post("https://book-app-backend-gbve.onrender.com/api/user/signup", userInfo)
+      .post("https://book-web-app-backend.onrender.com/api/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
