@@ -7,7 +7,7 @@ const Course = () => {
 const[book,setBook]=useState([]);
 useEffect(()=>{
    const getBook=async()=>{
-       axios.get("https://book-store-1hqv.onrender.com/api/book")
+       axios.get("https://book-app-backend-gbve.onrender.com/api/book")
        .then((response)=>{
         setBook(response.data);
        })
